@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* OTOduinoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* OTOduinoAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
+		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
+		DD0236B912E171BD00867C5D /* hiz_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0236B812E171BD00867C5D /* hiz_icon.png */; };
+		DD51412B12C03B830068BD59 /* ColorBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51412A12C03B830068BD59 /* ColorBarView.m */; };
+		DD51413112C086EA0068BD59 /* VoltageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51413012C086EA0068BD59 /* VoltageView.m */; };
+		DD51413412C086FC0068BD59 /* AnalogPinView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51413312C086FC0068BD59 /* AnalogPinView.m */; };
+		DD51413712C0870A0068BD59 /* DigitalPinView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51413612C0870A0068BD59 /* DigitalPinView.m */; };
+		DD51413A12C0873B0068BD59 /* OTOplugDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51413912C0873B0068BD59 /* OTOplugDetailView.m */; };
+		DD51413F12C0875C0068BD59 /* ConnectionDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51413E12C0875C0068BD59 /* ConnectionDialogView.m */; };
+		DD51414212C087FE0068BD59 /* ImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51414112C087FE0068BD59 /* ImageSource.m */; };
+		DD51416112C0B2BB0068BD59 /* bar00.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51415712C0B2BB0068BD59 /* bar00.png */; };
+		DD51416212C0B2BB0068BD59 /* bar01.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51415812C0B2BB0068BD59 /* bar01.png */; };
+		DD51416312C0B2BB0068BD59 /* bar02.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51415912C0B2BB0068BD59 /* bar02.png */; };
+		DD51416412C0B2BB0068BD59 /* bar03.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51415A12C0B2BB0068BD59 /* bar03.png */; };
+		DD51416512C0B2BB0068BD59 /* bar04.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51415B12C0B2BB0068BD59 /* bar04.png */; };
+		DD51416612C0B2BB0068BD59 /* bar05.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51415C12C0B2BB0068BD59 /* bar05.png */; };
+		DD51416712C0B2BB0068BD59 /* bar06.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51415D12C0B2BB0068BD59 /* bar06.png */; };
+		DD51416812C0B2BB0068BD59 /* bar08.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51415E12C0B2BB0068BD59 /* bar08.png */; };
+		DD51416912C0B2BB0068BD59 /* bar09.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51415F12C0B2BB0068BD59 /* bar09.png */; };
+		DD51416A12C0B2BB0068BD59 /* bar10.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51416012C0B2BB0068BD59 /* bar10.png */; };
+		DD51418112C0B3C40068BD59 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51418012C0B3C40068BD59 /* AudioToolbox.framework */; };
+		DD51418312C0B3D20068BD59 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51418212C0B3D20068BD59 /* AVFoundation.framework */; };
+		DD5141B012C0DBAE0068BD59 /* DigitalPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD5141AF12C0DBAE0068BD59 /* DigitalPinView.xib */; };
+		DD5141D012C17DD80068BD59 /* VoltageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD5141CF12C17DD80068BD59 /* VoltageView.xib */; };
+		DD5141E212C180860068BD59 /* off_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5141DF12C180860068BD59 /* off_button.png */; };
+		DD5141E312C180860068BD59 /* on_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5141E012C180860068BD59 /* on_button.png */; };
+		DD5141E412C180860068BD59 /* DigitalPortViewBackgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5141E112C180860068BD59 /* DigitalPortViewBackgroundImage.png */; };
+		DD51420812C189830068BD59 /* AnalogPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD51420712C189830068BD59 /* AnalogPinView.xib */; };
+		DD51421B12C18F7B0068BD59 /* out_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51421612C18F7B0068BD59 /* out_icon.png */; };
+		DD51421C12C18F7B0068BD59 /* in_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51421712C18F7B0068BD59 /* in_icon.png */; };
+		DD51421D12C18F7B0068BD59 /* high_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51421812C18F7B0068BD59 /* high_icon.png */; };
+		DD51421E12C18F7B0068BD59 /* low_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51421912C18F7B0068BD59 /* low_icon.png */; };
+		DD51421F12C18F7B0068BD59 /* port_gray_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51421A12C18F7B0068BD59 /* port_gray_button.png */; };
+		DD51422312C190670068BD59 /* port_red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51422212C190670068BD59 /* port_red_button.png */; };
+		DD51423F12C1D47A0068BD59 /* IOControllerBackgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51423E12C1D47A0068BD59 /* IOControllerBackgroundImage.png */; };
+		DD51424512C1D4D30068BD59 /* IOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51424312C1D4D30068BD59 /* IOViewController.m */; };
+		DD51424612C1D4D30068BD59 /* IOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD51424412C1D4D30068BD59 /* IOViewController.xib */; };
+		DD51425C12C1E4600068BD59 /* ConnectionStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51425B12C1E4600068BD59 /* ConnectionStatusView.m */; };
+		DD51425E12C1E4780068BD59 /* ConnectionStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD51425D12C1E4780068BD59 /* ConnectionStatusView.xib */; };
+		DD51426812C1FD1B0068BD59 /* disconnected_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51426512C1FD1B0068BD59 /* disconnected_icon.png */; };
+		DD51426912C1FD1B0068BD59 /* connected_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51426612C1FD1B0068BD59 /* connected_icon.png */; };
+		DD51426A12C1FD1B0068BD59 /* MonitorViewControllerBackgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51426712C1FD1B0068BD59 /* MonitorViewControllerBackgroundImage.png */; };
+		DD51428112C202040068BD59 /* bad_ball_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51427F12C202040068BD59 /* bad_ball_icon.png */; };
+		DD51428212C202040068BD59 /* ok_ball_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD51428012C202040068BD59 /* ok_ball_icon.png */; };
+		DD5142A212C227150068BD59 /* monitor_tab_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5142A012C227150068BD59 /* monitor_tab_icon.png */; };
+		DD5142A312C227150068BD59 /* io_tab_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5142A112C227150068BD59 /* io_tab_icon.png */; };
+		DD5142A712C2274D0068BD59 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5142A512C2274D0068BD59 /* HelpViewController.m */; };
+		DD5142A812C2274D0068BD59 /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD5142A612C2274D0068BD59 /* HelpViewController.xib */; };
+		DD5142BC12C227DE0068BD59 /* help_tab_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5142BB12C227DE0068BD59 /* help_tab_icon.png */; };
+		DD51430C12C2DAD80068BD59 /* OTOduinoSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51430B12C2DAD80068BD59 /* OTOduinoSocket.m */; };
+		DD51447212C5C8E50068BD59 /* ArduinoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51447112C5C8E40068BD59 /* ArduinoModel.m */; };
+		DD51447512C5C9080068BD59 /* OTOduinoHost.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51447412C5C9080068BD59 /* OTOduinoHost.m */; };
+		DD863B8312FFA7AD00ACB127 /* iphone_and_device.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD863B8212FFA7AD00ACB127 /* iphone_and_device.jpg */; };
+		DD863B8512FFA7BB00ACB127 /* otoduino_schematic.tiff in Resources */ = {isa = PBXBuildFile; fileRef = DD863B8412FFA7BB00ACB127 /* otoduino_schematic.tiff */; };
+		DDA4261412FAECCA005C4EAA /* bar07.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA4261312FAECCA005C4EAA /* bar07.png */; };
+		DDC2900912DE988200BD4BD6 /* libSoftwareModem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC28FFE12DE982800BD4BD6 /* libSoftwareModem.a */; };
+		DDCE625012F579CF00633AA7 /* AnalogPinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCE624F12F579CF00633AA7 /* AnalogPinModel.m */; };
+		DDCE625312F57AA200633AA7 /* DigitalPinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCE625212F57AA200633AA7 /* DigitalPinModel.m */; };
+		DDDCD49012FE8DF600A47D09 /* bar00@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD47B12FE8DF600A47D09 /* bar00@2x.png */; };
+		DDDCD49112FE8DF600A47D09 /* bar01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD47C12FE8DF600A47D09 /* bar01@2x.png */; };
+		DDDCD49212FE8DF600A47D09 /* bar02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD47D12FE8DF600A47D09 /* bar02@2x.png */; };
+		DDDCD49312FE8DF600A47D09 /* bar03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD47E12FE8DF600A47D09 /* bar03@2x.png */; };
+		DDDCD49412FE8DF600A47D09 /* bar04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD47F12FE8DF600A47D09 /* bar04@2x.png */; };
+		DDDCD49512FE8DF600A47D09 /* bar05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48012FE8DF600A47D09 /* bar05@2x.png */; };
+		DDDCD49612FE8DF600A47D09 /* bar06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48112FE8DF600A47D09 /* bar06@2x.png */; };
+		DDDCD49712FE8DF600A47D09 /* bar07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48212FE8DF600A47D09 /* bar07@2x.png */; };
+		DDDCD49812FE8DF600A47D09 /* bar08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48312FE8DF600A47D09 /* bar08@2x.png */; };
+		DDDCD49912FE8DF600A47D09 /* bar09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48412FE8DF600A47D09 /* bar09@2x.png */; };
+		DDDCD49A12FE8DF600A47D09 /* bar10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48512FE8DF600A47D09 /* bar10@2x.png */; };
+		DDDCD49B12FE8DF600A47D09 /* connected_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48612FE8DF600A47D09 /* connected_icon@2x.png */; };
+		DDDCD49C12FE8DF600A47D09 /* DigitalPortViewBackgroundImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48712FE8DF600A47D09 /* DigitalPortViewBackgroundImage@2x.png */; };
+		DDDCD49D12FE8DF600A47D09 /* disconnected_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48812FE8DF600A47D09 /* disconnected_icon@2x.png */; };
+		DDDCD49E12FE8DF600A47D09 /* help_tab_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48912FE8DF600A47D09 /* help_tab_icon@2x.png */; };
+		DDDCD49F12FE8DF600A47D09 /* in_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48A12FE8DF600A47D09 /* in_icon@2x.png */; };
+		DDDCD4A012FE8DF600A47D09 /* io_tab_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48B12FE8DF600A47D09 /* io_tab_icon@2x.png */; };
+		DDDCD4A112FE8DF600A47D09 /* IOControllerBackgroundImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48C12FE8DF600A47D09 /* IOControllerBackgroundImage@2x.png */; };
+		DDDCD4A212FE8DF600A47D09 /* out_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48D12FE8DF600A47D09 /* out_icon@2x.png */; };
+		DDDCD4A312FE8DF600A47D09 /* port_gray_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48E12FE8DF600A47D09 /* port_gray_button@2x.png */; };
+		DDDCD4A412FE8DF600A47D09 /* port_red_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD48F12FE8DF600A47D09 /* port_red_button@2x.png */; };
+		DDDCD4B412FEB47100A47D09 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD4B212FEB47100A47D09 /* icon.png */; };
+		DDDCD4B512FEB47100A47D09 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD4B312FEB47100A47D09 /* icon@2x.png */; };
+		DDDCD4F412FEB7EC00A47D09 /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD4F312FEB7EC00A47D09 /* help.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDC28FFD12DE982800BD4BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC28FF412DE982800BD4BD6 /* SoftwareModem.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SoftwareModem;
+		};
+		DDC28FFF12DE982800BD4BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC28FF412DE982800BD4BD6 /* SoftwareModem.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD1CF8D912B5BB8200E784AE;
+			remoteInfo = TestCases;
+		};
+		DDC2900A12DE989500BD4BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC28FF412DE982800BD4BD6 /* SoftwareModem.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = SoftwareModem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* OTOduinoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTOduinoAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* OTOduinoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTOduinoAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* OTOduino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTOduino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765070DF74369002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AB4B0D9B1048005BE974 /* OTOduino_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTOduino_Prefix.pch; sourceTree = "<group>"; };
+		28AD73870D9D96C1002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* OTOduino-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OTOduino-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		DD0236B812E171BD00867C5D /* hiz_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hiz_icon.png; path = Images/hiz_icon.png; sourceTree = "<group>"; };
+		DD51412912C03B830068BD59 /* ColorBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorBarView.h; sourceTree = "<group>"; };
+		DD51412A12C03B830068BD59 /* ColorBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorBarView.m; sourceTree = "<group>"; };
+		DD51412F12C086EA0068BD59 /* VoltageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoltageView.h; sourceTree = "<group>"; };
+		DD51413012C086EA0068BD59 /* VoltageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoltageView.m; sourceTree = "<group>"; };
+		DD51413212C086FC0068BD59 /* AnalogPinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalogPinView.h; sourceTree = "<group>"; };
+		DD51413312C086FC0068BD59 /* AnalogPinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalogPinView.m; sourceTree = "<group>"; };
+		DD51413512C0870A0068BD59 /* DigitalPinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitalPinView.h; sourceTree = "<group>"; };
+		DD51413612C0870A0068BD59 /* DigitalPinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitalPinView.m; sourceTree = "<group>"; };
+		DD51413812C0873B0068BD59 /* OTOplugDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTOplugDetailView.h; sourceTree = "<group>"; };
+		DD51413912C0873B0068BD59 /* OTOplugDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTOplugDetailView.m; sourceTree = "<group>"; };
+		DD51413D12C0875C0068BD59 /* ConnectionDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionDialogView.h; sourceTree = "<group>"; };
+		DD51413E12C0875C0068BD59 /* ConnectionDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionDialogView.m; sourceTree = "<group>"; };
+		DD51414012C087FE0068BD59 /* ImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSource.h; sourceTree = "<group>"; };
+		DD51414112C087FE0068BD59 /* ImageSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageSource.m; sourceTree = "<group>"; };
+		DD51415712C0B2BB0068BD59 /* bar00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar00.png; path = Images/bar00.png; sourceTree = "<group>"; };
+		DD51415812C0B2BB0068BD59 /* bar01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar01.png; path = Images/bar01.png; sourceTree = "<group>"; };
+		DD51415912C0B2BB0068BD59 /* bar02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar02.png; path = Images/bar02.png; sourceTree = "<group>"; };
+		DD51415A12C0B2BB0068BD59 /* bar03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar03.png; path = Images/bar03.png; sourceTree = "<group>"; };
+		DD51415B12C0B2BB0068BD59 /* bar04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar04.png; path = Images/bar04.png; sourceTree = "<group>"; };
+		DD51415C12C0B2BB0068BD59 /* bar05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar05.png; path = Images/bar05.png; sourceTree = "<group>"; };
+		DD51415D12C0B2BB0068BD59 /* bar06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar06.png; path = Images/bar06.png; sourceTree = "<group>"; };
+		DD51415E12C0B2BB0068BD59 /* bar08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar08.png; path = Images/bar08.png; sourceTree = "<group>"; };
+		DD51415F12C0B2BB0068BD59 /* bar09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar09.png; path = Images/bar09.png; sourceTree = "<group>"; };
+		DD51416012C0B2BB0068BD59 /* bar10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar10.png; path = Images/bar10.png; sourceTree = "<group>"; };
+		DD51418012C0B3C40068BD59 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DD51418212C0B3D20068BD59 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DD5141AF12C0DBAE0068BD59 /* DigitalPinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DigitalPinView.xib; path = Classes/DigitalPinView.xib; sourceTree = "<group>"; };
+		DD5141CF12C17DD80068BD59 /* VoltageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoltageView.xib; sourceTree = "<group>"; };
+		DD5141DF12C180860068BD59 /* off_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = off_button.png; path = Images/off_button.png; sourceTree = "<group>"; };
+		DD5141E012C180860068BD59 /* on_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = on_button.png; path = Images/on_button.png; sourceTree = "<group>"; };
+		DD5141E112C180860068BD59 /* DigitalPortViewBackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DigitalPortViewBackgroundImage.png; path = Images/DigitalPortViewBackgroundImage.png; sourceTree = "<group>"; };
+		DD51420712C189830068BD59 /* AnalogPinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AnalogPinView.xib; path = Classes/AnalogPinView.xib; sourceTree = "<group>"; };
+		DD51421612C18F7B0068BD59 /* out_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = out_icon.png; path = Images/out_icon.png; sourceTree = "<group>"; };
+		DD51421712C18F7B0068BD59 /* in_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = in_icon.png; path = Images/in_icon.png; sourceTree = "<group>"; };
+		DD51421812C18F7B0068BD59 /* high_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = high_icon.png; path = Images/high_icon.png; sourceTree = "<group>"; };
+		DD51421912C18F7B0068BD59 /* low_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = low_icon.png; path = Images/low_icon.png; sourceTree = "<group>"; };
+		DD51421A12C18F7B0068BD59 /* port_gray_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = port_gray_button.png; path = Images/port_gray_button.png; sourceTree = "<group>"; };
+		DD51422212C190670068BD59 /* port_red_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = port_red_button.png; path = Images/port_red_button.png; sourceTree = "<group>"; };
+		DD51423E12C1D47A0068BD59 /* IOControllerBackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IOControllerBackgroundImage.png; path = Images/IOControllerBackgroundImage.png; sourceTree = "<group>"; };
+		DD51424212C1D4D30068BD59 /* IOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOViewController.h; sourceTree = "<group>"; };
+		DD51424312C1D4D30068BD59 /* IOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOViewController.m; sourceTree = "<group>"; };
+		DD51424412C1D4D30068BD59 /* IOViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IOViewController.xib; sourceTree = "<group>"; };
+		DD51425A12C1E4600068BD59 /* ConnectionStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionStatusView.h; sourceTree = "<group>"; };
+		DD51425B12C1E4600068BD59 /* ConnectionStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionStatusView.m; sourceTree = "<group>"; };
+		DD51425D12C1E4780068BD59 /* ConnectionStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectionStatusView.xib; sourceTree = "<group>"; };
+		DD51426512C1FD1B0068BD59 /* disconnected_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disconnected_icon.png; path = Images/disconnected_icon.png; sourceTree = "<group>"; };
+		DD51426612C1FD1B0068BD59 /* connected_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = connected_icon.png; path = Images/connected_icon.png; sourceTree = "<group>"; };
+		DD51426712C1FD1B0068BD59 /* MonitorViewControllerBackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MonitorViewControllerBackgroundImage.png; path = Images/MonitorViewControllerBackgroundImage.png; sourceTree = "<group>"; };
+		DD51427F12C202040068BD59 /* bad_ball_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bad_ball_icon.png; path = Images/bad_ball_icon.png; sourceTree = "<group>"; };
+		DD51428012C202040068BD59 /* ok_ball_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ok_ball_icon.png; path = Images/ok_ball_icon.png; sourceTree = "<group>"; };
+		DD5142A012C227150068BD59 /* monitor_tab_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = monitor_tab_icon.png; path = Images/monitor_tab_icon.png; sourceTree = "<group>"; };
+		DD5142A112C227150068BD59 /* io_tab_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = io_tab_icon.png; path = Images/io_tab_icon.png; sourceTree = "<group>"; };
+		DD5142A412C2274D0068BD59 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		DD5142A512C2274D0068BD59 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		DD5142A612C2274D0068BD59 /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
+		DD5142BB12C227DE0068BD59 /* help_tab_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = help_tab_icon.png; path = Images/help_tab_icon.png; sourceTree = "<group>"; };
+		DD51430012C2D77F0068BD59 /* OTOduinoTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTOduinoTypes.h; sourceTree = "<group>"; };
+		DD51430712C2DAA90068BD59 /* OTOduinoHostDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTOduinoHostDelegate.h; sourceTree = "<group>"; };
+		DD51430A12C2DAD80068BD59 /* OTOduinoSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTOduinoSocket.h; sourceTree = "<group>"; };
+		DD51430B12C2DAD80068BD59 /* OTOduinoSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTOduinoSocket.m; sourceTree = "<group>"; };
+		DD51447012C5C8E40068BD59 /* ArduinoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArduinoModel.h; path = Classes/ArduinoModel.h; sourceTree = "<group>"; };
+		DD51447112C5C8E40068BD59 /* ArduinoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArduinoModel.m; path = Classes/ArduinoModel.m; sourceTree = "<group>"; };
+		DD51447312C5C9080068BD59 /* OTOduinoHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTOduinoHost.h; sourceTree = "<group>"; };
+		DD51447412C5C9080068BD59 /* OTOduinoHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTOduinoHost.m; sourceTree = "<group>"; };
+		DD863B8212FFA7AD00ACB127 /* iphone_and_device.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone_and_device.jpg; sourceTree = "<group>"; };
+		DD863B8412FFA7BB00ACB127 /* otoduino_schematic.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = otoduino_schematic.tiff; sourceTree = "<group>"; };
+		DDA4261312FAECCA005C4EAA /* bar07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar07.png; path = Images/bar07.png; sourceTree = "<group>"; };
+		DDC28FF412DE982800BD4BD6 /* SoftwareModem.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SoftwareModem.xcodeproj; path = "../../OTO-plug/src/obj-c/SoftwareModem.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		DDC2900112DE986900BD4BD6 /* AudioPHY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioPHY.h; path = "../../OTO-plug/src/obj-c/AudioPHY.h"; sourceTree = SOURCE_ROOT; };
+		DDC2900212DE986900BD4BD6 /* FSKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSKConstants.h; path = "../../OTO-plug/src/obj-c/FSKConstants.h"; sourceTree = SOURCE_ROOT; };
+		DDC2900412DE986900BD4BD6 /* SWMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWMConstants.h; path = "../../OTO-plug/src/obj-c/SWMConstants.h"; sourceTree = SOURCE_ROOT; };
+		DDC2900512DE986900BD4BD6 /* SWMPhysicalInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWMPhysicalInterface.h; path = "../../OTO-plug/src/obj-c/SWMPhysicalInterface.h"; sourceTree = SOURCE_ROOT; };
+		DDC2900612DE986900BD4BD6 /* SWMPhysicalSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWMPhysicalSocket.h; path = "../../OTO-plug/src/obj-c/SWMPhysicalSocket.h"; sourceTree = SOURCE_ROOT; };
+		DDC2900712DE986900BD4BD6 /* SWMSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWMSocket.h; path = "../../OTO-plug/src/obj-c/SWMSocket.h"; sourceTree = SOURCE_ROOT; };
+		DDC2901A12DFD1BA00BD4BD6 /* FSKModem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSKModem.h; path = "../../OTO-plug/src/obj-c/FSKModem.h"; sourceTree = SOURCE_ROOT; };
+		DDCE624E12F579CF00633AA7 /* AnalogPinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalogPinModel.h; sourceTree = "<group>"; };
+		DDCE624F12F579CF00633AA7 /* AnalogPinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalogPinModel.m; sourceTree = "<group>"; };
+		DDCE625112F57AA200633AA7 /* DigitalPinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitalPinModel.h; sourceTree = "<group>"; };
+		DDCE625212F57AA200633AA7 /* DigitalPinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitalPinModel.m; sourceTree = "<group>"; };
+		DDDCD47B12FE8DF600A47D09 /* bar00@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bar00@2x.png"; path = "Images/bar00@2x.png"; sourceTree = "<group>"; };
+		DDDCD47C12FE8DF600A47D09 /* bar01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bar01@2x.png"; path = "Images/bar01@2x.png"; sourceTree = "<group>"; };
+		DDDCD47D12FE8DF600A47D09 /* bar02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bar02@2x.png"; path = "Images/bar02@2x.png"; sourceTree = "<group>"; };
+		DDDCD47E12FE8DF600A47D09 /* bar03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bar03@2x.png"; path = "Images/bar03@2x.png"; sourceTree = "<group>"; };
+		DDDCD47F12FE8DF600A47D09 /* bar04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bar04@2x.png"; path = "Images/bar04@2x.png"; sourceTree = "<group>"; };
+		DDDCD48012FE8DF600A47D09 /* bar05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bar05@2x.png"; path = "Images/bar05@2x.png"; sourceTree = "<group>"; };
+		DDDCD48112FE8DF600A47D09 /* bar06@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bar06@2x.png"; path = "Images/bar06@2x.png"; sourceTree = "<group>"; };
+		DDDCD48212FE8DF600A47D09 /* bar07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bar07@2x.png"; path = "Images/bar07@2x.png"; sourceTree = "<group>"; };
+		DDDCD48312FE8DF600A47D09 /* bar08@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bar08@2x.png"; path = "Images/bar08@2x.png"; sourceTree = "<group>"; };
+		DDDCD48412FE8DF600A47D09 /* bar09@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bar09@2x.png"; path = "Images/bar09@2x.png"; sourceTree = "<group>"; };
+		DDDCD48512FE8DF600A47D09 /* bar10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bar10@2x.png"; path = "Images/bar10@2x.png"; sourceTree = "<group>"; };
+		DDDCD48612FE8DF600A47D09 /* connected_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "connected_icon@2x.png"; path = "Images/connected_icon@2x.png"; sourceTree = "<group>"; };
+		DDDCD48712FE8DF600A47D09 /* DigitalPortViewBackgroundImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DigitalPortViewBackgroundImage@2x.png"; path = "Images/DigitalPortViewBackgroundImage@2x.png"; sourceTree = "<group>"; };
+		DDDCD48812FE8DF600A47D09 /* disconnected_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "disconnected_icon@2x.png"; path = "Images/disconnected_icon@2x.png"; sourceTree = "<group>"; };
+		DDDCD48912FE8DF600A47D09 /* help_tab_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "help_tab_icon@2x.png"; path = "Images/help_tab_icon@2x.png"; sourceTree = "<group>"; };
+		DDDCD48A12FE8DF600A47D09 /* in_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "in_icon@2x.png"; path = "Images/in_icon@2x.png"; sourceTree = "<group>"; };
+		DDDCD48B12FE8DF600A47D09 /* io_tab_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "io_tab_icon@2x.png"; path = "Images/io_tab_icon@2x.png"; sourceTree = "<group>"; };
+		DDDCD48C12FE8DF600A47D09 /* IOControllerBackgroundImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "IOControllerBackgroundImage@2x.png"; path = "Images/IOControllerBackgroundImage@2x.png"; sourceTree = "<group>"; };
+		DDDCD48D12FE8DF600A47D09 /* out_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "out_icon@2x.png"; path = "Images/out_icon@2x.png"; sourceTree = "<group>"; };
+		DDDCD48E12FE8DF600A47D09 /* port_gray_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "port_gray_button@2x.png"; path = "Images/port_gray_button@2x.png"; sourceTree = "<group>"; };
+		DDDCD48F12FE8DF600A47D09 /* port_red_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "port_red_button@2x.png"; path = "Images/port_red_button@2x.png"; sourceTree = "<group>"; };
+		DDDCD4B212FEB47100A47D09 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Images/icon.png; sourceTree = "<group>"; };
+		DDDCD4B312FEB47100A47D09 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Images/icon@2x.png"; sourceTree = "<group>"; };
+		DDDCD4F112FEB7D600A47D09 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = English; path = English.lproj/help.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC2900912DE988200BD4BD6 /* libSoftwareModem.a in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
+				DD51418112C0B3C40068BD59 /* AudioToolbox.framework in Frameworks */,
+				DD51418312C0B3D20068BD59 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DD51411F12C03AB30068BD59 /* Controllers */,
+				DD51411E12C03AAD0068BD59 /* Views */,
+				1D3623240D0F684500981E51 /* OTOduinoAppDelegate.h */,
+				1D3623250D0F684500981E51 /* OTOduinoAppDelegate.m */,
+				DD51414012C087FE0068BD59 /* ImageSource.h */,
+				DD51414112C087FE0068BD59 /* ImageSource.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* OTOduino.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* OTOduino */ = {
+			isa = PBXGroup;
+			children = (
+				DDC28FF412DE982800BD4BD6 /* SoftwareModem.xcodeproj */,
+				DD51422C12C1C2780068BD59 /* SoftwareModem */,
+				DD5142FA12C2D5570068BD59 /* OTOduinoHost */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = OTOduino;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AB4B0D9B1048005BE974 /* OTOduino_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD51411D12C03AA20068BD59 /* Images */,
+				DD51420712C189830068BD59 /* AnalogPinView.xib */,
+				DD5141AF12C0DBAE0068BD59 /* DigitalPinView.xib */,
+				DD5141CF12C17DD80068BD59 /* VoltageView.xib */,
+				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* OTOduino-Info.plist */,
+				DD51425D12C1E4780068BD59 /* ConnectionStatusView.xib */,
+				DD863B8412FFA7BB00ACB127 /* otoduino_schematic.tiff */,
+				DD863B8212FFA7AD00ACB127 /* iphone_and_device.jpg */,
+				DDDCD4F312FEB7EC00A47D09 /* help.html */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765070DF74369002DB57D /* CoreGraphics.framework */,
+				DD51418012C0B3C40068BD59 /* AudioToolbox.framework */,
+				DD51418212C0B3D20068BD59 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD51411D12C03AA20068BD59 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DDDCD4B212FEB47100A47D09 /* icon.png */,
+				DDDCD4B312FEB47100A47D09 /* icon@2x.png */,
+				DDDCD47B12FE8DF600A47D09 /* bar00@2x.png */,
+				DDDCD47C12FE8DF600A47D09 /* bar01@2x.png */,
+				DDDCD47D12FE8DF600A47D09 /* bar02@2x.png */,
+				DDDCD47E12FE8DF600A47D09 /* bar03@2x.png */,
+				DDDCD47F12FE8DF600A47D09 /* bar04@2x.png */,
+				DDDCD48012FE8DF600A47D09 /* bar05@2x.png */,
+				DDDCD48112FE8DF600A47D09 /* bar06@2x.png */,
+				DDDCD48212FE8DF600A47D09 /* bar07@2x.png */,
+				DDDCD48312FE8DF600A47D09 /* bar08@2x.png */,
+				DDDCD48412FE8DF600A47D09 /* bar09@2x.png */,
+				DDDCD48512FE8DF600A47D09 /* bar10@2x.png */,
+				DDDCD48612FE8DF600A47D09 /* connected_icon@2x.png */,
+				DDDCD48712FE8DF600A47D09 /* DigitalPortViewBackgroundImage@2x.png */,
+				DDDCD48812FE8DF600A47D09 /* disconnected_icon@2x.png */,
+				DDDCD48912FE8DF600A47D09 /* help_tab_icon@2x.png */,
+				DDDCD48A12FE8DF600A47D09 /* in_icon@2x.png */,
+				DDDCD48B12FE8DF600A47D09 /* io_tab_icon@2x.png */,
+				DDDCD48C12FE8DF600A47D09 /* IOControllerBackgroundImage@2x.png */,
+				DDDCD48D12FE8DF600A47D09 /* out_icon@2x.png */,
+				DDDCD48E12FE8DF600A47D09 /* port_gray_button@2x.png */,
+				DDDCD48F12FE8DF600A47D09 /* port_red_button@2x.png */,
+				DD0236B812E171BD00867C5D /* hiz_icon.png */,
+				DD5142BB12C227DE0068BD59 /* help_tab_icon.png */,
+				DD5142A012C227150068BD59 /* monitor_tab_icon.png */,
+				DD5142A112C227150068BD59 /* io_tab_icon.png */,
+				DD51427F12C202040068BD59 /* bad_ball_icon.png */,
+				DD51428012C202040068BD59 /* ok_ball_icon.png */,
+				DD51426512C1FD1B0068BD59 /* disconnected_icon.png */,
+				DD51426612C1FD1B0068BD59 /* connected_icon.png */,
+				DD51426712C1FD1B0068BD59 /* MonitorViewControllerBackgroundImage.png */,
+				DD51423E12C1D47A0068BD59 /* IOControllerBackgroundImage.png */,
+				DD51422212C190670068BD59 /* port_red_button.png */,
+				DD51421612C18F7B0068BD59 /* out_icon.png */,
+				DD51421712C18F7B0068BD59 /* in_icon.png */,
+				DD51421812C18F7B0068BD59 /* high_icon.png */,
+				DD51421912C18F7B0068BD59 /* low_icon.png */,
+				DD51421A12C18F7B0068BD59 /* port_gray_button.png */,
+				DD5141DF12C180860068BD59 /* off_button.png */,
+				DD5141E012C180860068BD59 /* on_button.png */,
+				DD5141E112C180860068BD59 /* DigitalPortViewBackgroundImage.png */,
+				DD51415712C0B2BB0068BD59 /* bar00.png */,
+				DD51415812C0B2BB0068BD59 /* bar01.png */,
+				DD51415912C0B2BB0068BD59 /* bar02.png */,
+				DD51415A12C0B2BB0068BD59 /* bar03.png */,
+				DD51415B12C0B2BB0068BD59 /* bar04.png */,
+				DD51415C12C0B2BB0068BD59 /* bar05.png */,
+				DD51415D12C0B2BB0068BD59 /* bar06.png */,
+				DDA4261312FAECCA005C4EAA /* bar07.png */,
+				DD51415E12C0B2BB0068BD59 /* bar08.png */,
+				DD51415F12C0B2BB0068BD59 /* bar09.png */,
+				DD51416012C0B2BB0068BD59 /* bar10.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		DD51411E12C03AAD0068BD59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD51412912C03B830068BD59 /* ColorBarView.h */,
+				DD51412A12C03B830068BD59 /* ColorBarView.m */,
+				DD51412F12C086EA0068BD59 /* VoltageView.h */,
+				DD51413012C086EA0068BD59 /* VoltageView.m */,
+				DD51413212C086FC0068BD59 /* AnalogPinView.h */,
+				DD51413312C086FC0068BD59 /* AnalogPinView.m */,
+				DD51413512C0870A0068BD59 /* DigitalPinView.h */,
+				DD51413612C0870A0068BD59 /* DigitalPinView.m */,
+				DD51413812C0873B0068BD59 /* OTOplugDetailView.h */,
+				DD51413912C0873B0068BD59 /* OTOplugDetailView.m */,
+				DD51413D12C0875C0068BD59 /* ConnectionDialogView.h */,
+				DD51413E12C0875C0068BD59 /* ConnectionDialogView.m */,
+				DD51425A12C1E4600068BD59 /* ConnectionStatusView.h */,
+				DD51425B12C1E4600068BD59 /* ConnectionStatusView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DD51411F12C03AB30068BD59 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD51424212C1D4D30068BD59 /* IOViewController.h */,
+				DD51424312C1D4D30068BD59 /* IOViewController.m */,
+				DD51424412C1D4D30068BD59 /* IOViewController.xib */,
+				DD5142A412C2274D0068BD59 /* HelpViewController.h */,
+				DD5142A512C2274D0068BD59 /* HelpViewController.m */,
+				DD5142A612C2274D0068BD59 /* HelpViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DD51422C12C1C2780068BD59 /* SoftwareModem */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2901A12DFD1BA00BD4BD6 /* FSKModem.h */,
+				DDC2900112DE986900BD4BD6 /* AudioPHY.h */,
+				DDC2900212DE986900BD4BD6 /* FSKConstants.h */,
+				DDC2900412DE986900BD4BD6 /* SWMConstants.h */,
+				DDC2900512DE986900BD4BD6 /* SWMPhysicalInterface.h */,
+				DDC2900612DE986900BD4BD6 /* SWMPhysicalSocket.h */,
+				DDC2900712DE986900BD4BD6 /* SWMSocket.h */,
+			);
+			name = SoftwareModem;
+			sourceTree = "<group>";
+		};
+		DD5142FA12C2D5570068BD59 /* OTOduinoHost */ = {
+			isa = PBXGroup;
+			children = (
+				DD51447012C5C8E40068BD59 /* ArduinoModel.h */,
+				DD51447112C5C8E40068BD59 /* ArduinoModel.m */,
+				DD51430012C2D77F0068BD59 /* OTOduinoTypes.h */,
+				DD51430712C2DAA90068BD59 /* OTOduinoHostDelegate.h */,
+				DD51430A12C2DAD80068BD59 /* OTOduinoSocket.h */,
+				DD51430B12C2DAD80068BD59 /* OTOduinoSocket.m */,
+				DD51447312C5C9080068BD59 /* OTOduinoHost.h */,
+				DD51447412C5C9080068BD59 /* OTOduinoHost.m */,
+				DDCE624E12F579CF00633AA7 /* AnalogPinModel.h */,
+				DDCE624F12F579CF00633AA7 /* AnalogPinModel.m */,
+				DDCE625112F57AA200633AA7 /* DigitalPinModel.h */,
+				DDCE625212F57AA200633AA7 /* DigitalPinModel.m */,
+			);
+			name = OTOduinoHost;
+			sourceTree = "<group>";
+		};
+		DDC28FF512DE982800BD4BD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDC28FFE12DE982800BD4BD6 /* libSoftwareModem.a */,
+				DDC2900012DE982800BD4BD6 /* TestCases.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* OTOduino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "OTOduino" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDC2900B12DE989500BD4BD6 /* PBXTargetDependency */,
+			);
+			name = OTOduino;
+			productName = OTOduino;
+			productReference = 1D6058910D05DD3D006BFB54 /* OTOduino.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "REINFORCE Lab.";
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "OTOduino" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* OTOduino */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DDC28FF512DE982800BD4BD6 /* Products */;
+					ProjectRef = DDC28FF412DE982800BD4BD6 /* SoftwareModem.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* OTOduino */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DDC28FFE12DE982800BD4BD6 /* libSoftwareModem.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSoftwareModem.a;
+			remoteRef = DDC28FFD12DE982800BD4BD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDC2900012DE982800BD4BD6 /* TestCases.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestCases.app;
+			remoteRef = DDC28FFF12DE982800BD4BD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */,
+				DD51416112C0B2BB0068BD59 /* bar00.png in Resources */,
+				DD51416212C0B2BB0068BD59 /* bar01.png in Resources */,
+				DD51416312C0B2BB0068BD59 /* bar02.png in Resources */,
+				DD51416412C0B2BB0068BD59 /* bar03.png in Resources */,
+				DD51416512C0B2BB0068BD59 /* bar04.png in Resources */,
+				DD51416612C0B2BB0068BD59 /* bar05.png in Resources */,
+				DD51416712C0B2BB0068BD59 /* bar06.png in Resources */,
+				DD51416812C0B2BB0068BD59 /* bar08.png in Resources */,
+				DD51416912C0B2BB0068BD59 /* bar09.png in Resources */,
+				DD51416A12C0B2BB0068BD59 /* bar10.png in Resources */,
+				DD5141B012C0DBAE0068BD59 /* DigitalPinView.xib in Resources */,
+				DD5141D012C17DD80068BD59 /* VoltageView.xib in Resources */,
+				DD5141E212C180860068BD59 /* off_button.png in Resources */,
+				DD5141E312C180860068BD59 /* on_button.png in Resources */,
+				DD5141E412C180860068BD59 /* DigitalPortViewBackgroundImage.png in Resources */,
+				DD51420812C189830068BD59 /* AnalogPinView.xib in Resources */,
+				DD51421B12C18F7B0068BD59 /* out_icon.png in Resources */,
+				DD51421C12C18F7B0068BD59 /* in_icon.png in Resources */,
+				DD51421D12C18F7B0068BD59 /* high_icon.png in Resources */,
+				DD51421E12C18F7B0068BD59 /* low_icon.png in Resources */,
+				DD51421F12C18F7B0068BD59 /* port_gray_button.png in Resources */,
+				DD51422312C190670068BD59 /* port_red_button.png in Resources */,
+				DD51423F12C1D47A0068BD59 /* IOControllerBackgroundImage.png in Resources */,
+				DD51424612C1D4D30068BD59 /* IOViewController.xib in Resources */,
+				DD51425E12C1E4780068BD59 /* ConnectionStatusView.xib in Resources */,
+				DD51426812C1FD1B0068BD59 /* disconnected_icon.png in Resources */,
+				DD51426912C1FD1B0068BD59 /* connected_icon.png in Resources */,
+				DD51426A12C1FD1B0068BD59 /* MonitorViewControllerBackgroundImage.png in Resources */,
+				DD51428112C202040068BD59 /* bad_ball_icon.png in Resources */,
+				DD51428212C202040068BD59 /* ok_ball_icon.png in Resources */,
+				DD5142A212C227150068BD59 /* monitor_tab_icon.png in Resources */,
+				DD5142A312C227150068BD59 /* io_tab_icon.png in Resources */,
+				DD5142A812C2274D0068BD59 /* HelpViewController.xib in Resources */,
+				DD5142BC12C227DE0068BD59 /* help_tab_icon.png in Resources */,
+				DD0236B912E171BD00867C5D /* hiz_icon.png in Resources */,
+				DDA4261412FAECCA005C4EAA /* bar07.png in Resources */,
+				DDDCD49012FE8DF600A47D09 /* bar00@2x.png in Resources */,
+				DDDCD49112FE8DF600A47D09 /* bar01@2x.png in Resources */,
+				DDDCD49212FE8DF600A47D09 /* bar02@2x.png in Resources */,
+				DDDCD49312FE8DF600A47D09 /* bar03@2x.png in Resources */,
+				DDDCD49412FE8DF600A47D09 /* bar04@2x.png in Resources */,
+				DDDCD49512FE8DF600A47D09 /* bar05@2x.png in Resources */,
+				DDDCD49612FE8DF600A47D09 /* bar06@2x.png in Resources */,
+				DDDCD49712FE8DF600A47D09 /* bar07@2x.png in Resources */,
+				DDDCD49812FE8DF600A47D09 /* bar08@2x.png in Resources */,
+				DDDCD49912FE8DF600A47D09 /* bar09@2x.png in Resources */,
+				DDDCD49A12FE8DF600A47D09 /* bar10@2x.png in Resources */,
+				DDDCD49B12FE8DF600A47D09 /* connected_icon@2x.png in Resources */,
+				DDDCD49C12FE8DF600A47D09 /* DigitalPortViewBackgroundImage@2x.png in Resources */,
+				DDDCD49D12FE8DF600A47D09 /* disconnected_icon@2x.png in Resources */,
+				DDDCD49E12FE8DF600A47D09 /* help_tab_icon@2x.png in Resources */,
+				DDDCD49F12FE8DF600A47D09 /* in_icon@2x.png in Resources */,
+				DDDCD4A012FE8DF600A47D09 /* io_tab_icon@2x.png in Resources */,
+				DDDCD4A112FE8DF600A47D09 /* IOControllerBackgroundImage@2x.png in Resources */,
+				DDDCD4A212FE8DF600A47D09 /* out_icon@2x.png in Resources */,
+				DDDCD4A312FE8DF600A47D09 /* port_gray_button@2x.png in Resources */,
+				DDDCD4A412FE8DF600A47D09 /* port_red_button@2x.png in Resources */,
+				DDDCD4B412FEB47100A47D09 /* icon.png in Resources */,
+				DDDCD4B512FEB47100A47D09 /* icon@2x.png in Resources */,
+				DDDCD4F412FEB7EC00A47D09 /* help.html in Resources */,
+				DD863B8312FFA7AD00ACB127 /* iphone_and_device.jpg in Resources */,
+				DD863B8512FFA7BB00ACB127 /* otoduino_schematic.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* OTOduinoAppDelegate.m in Sources */,
+				DD51412B12C03B830068BD59 /* ColorBarView.m in Sources */,
+				DD51413112C086EA0068BD59 /* VoltageView.m in Sources */,
+				DD51413412C086FC0068BD59 /* AnalogPinView.m in Sources */,
+				DD51413712C0870A0068BD59 /* DigitalPinView.m in Sources */,
+				DD51413A12C0873B0068BD59 /* OTOplugDetailView.m in Sources */,
+				DD51413F12C0875C0068BD59 /* ConnectionDialogView.m in Sources */,
+				DD51414212C087FE0068BD59 /* ImageSource.m in Sources */,
+				DD51424512C1D4D30068BD59 /* IOViewController.m in Sources */,
+				DD51425C12C1E4600068BD59 /* ConnectionStatusView.m in Sources */,
+				DD5142A712C2274D0068BD59 /* HelpViewController.m in Sources */,
+				DD51430C12C2DAD80068BD59 /* OTOduinoSocket.m in Sources */,
+				DD51447212C5C8E50068BD59 /* ArduinoModel.m in Sources */,
+				DD51447512C5C9080068BD59 /* OTOduinoHost.m in Sources */,
+				DDCE625012F579CF00633AA7 /* AnalogPinModel.m in Sources */,
+				DDCE625312F57AA200633AA7 /* DigitalPinModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDC2900B12DE989500BD4BD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SoftwareModem;
+			targetProxy = DDC2900A12DE989500BD4BD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDDCD4F312FEB7EC00A47D09 /* help.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDDCD4F112FEB7D600A47D09 /* English */,
+			);
+			name = help.html;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OTOduino_Prefix.pch;
+				INFOPLIST_FILE = "OTOduino-Info.plist";
+				PRODUCT_NAME = OTOduino;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OTOduino_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "OTOduino-Info.plist";
+				PRODUCT_NAME = OTOduino;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		DDDCD4E712FEB5B700A47D09 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		DDDCD4E812FEB5B700A47D09 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OTOduino_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "OTOduino-Info.plist";
+				PRODUCT_NAME = OTOduino;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "OTOduino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				DDDCD4E812FEB5B700A47D09 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "OTOduino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				DDDCD4E712FEB5B700A47D09 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<h1>What is "OTOduino"?</h1>
+<p>"OTO" means "sound" in Japaniese. 
+"OTOduino" is a visualized sound modem terminal application for iPhone.
+You can monitor and control <a href="http://www.arduino.cc/">Arduino(TM)</a> digial and analog ports status by connecting your Arduino to iPhone earphone jack as following:
+<img src="../iphone_and_device.jpg"/>
+</p>
+
+<p>Both "OTOduino" (repository <a href="https://github.com/reinforce-lab/OTOduino">https://github.com/reinforce-lab/OTOduino</a>) project 
+and a software modem project "OTO-plug" (repository <a href="https://github.com/reinforce-lab/OTO-plug">https://github.com/reinforce-lab/OTO-plug</a>) 
+which "OTOduino" uses are open-source projects released under MIT license. 
+These projects have been developed by an freelance engineer Akihiro UEHARA, REINFORCE Lab 
+(<a href="http://www.reinforce-lab.com/">http://www.reinforce-lab.com/</a>, web site is written in Japanese) 
+who also provides iPhone software design services.</p>
+
+<h1>Arduino interface circuit and a sketch</h1>
+To use OTOduino with your own Arduino, you need an interface circuit and to upload a sketch.
+<h2>Interface citucit</h2>
+<p>You need an interface circuit to use OTOduino. 
+However the interface circuit for Arduino is going to be released at the end of March, 
+it is very simple that You can make your own one. 
+Its circuit diagram is as following:
+<img src="../otoduino_schematic.tiff"/>
+<br/>
+Any kind of capacitores can be used for C1 and C2.
+Earphone jack left channel must be connected to the Arduino.OTOduino app only uses headset left channels to transmit data to Arduino. Right channnel is mute.
+</p>
+<h2>How to upload a sketch</h2>
+<p>First SoftwareModem library should be added to your local disk. Make a "SoftwareModem" directory in your Arduino libraries directory (~/Document/Arduino/libraries/ on Mac OS),
+and then download source codes SoftwareModem.cpp and SoftwareModem.h from the repository <a href="https://github.com/reinforce-lab/OTOduino/tree/master/OTO-plug/src/arduino/libraries/SoftwareModem/">https://github.com/reinforce-lab/OTOduino/tree/master/OTO-plug/src/arduino/libraries/SoftwareModem/</a>.
+</p>
+<p>Second download a sketch and upload it. Make a "OTOduinoSImpleClient" directory and download source codes OTOduinoSimpleClient.pde and OTOduinoTypes.h from the repository
+<a href="https://github.com/reinforce-lab/OTOduino/tree/master/src/arduino/OTOduinoSimpleClient">https://github.com/reinforce-lab/OTOduino/tree/master/src/arduino/OTOduinoSimpleClient</a>.
+Now you can open the OTOduinoSimpleClient sketch and veriry/upload it to your Arduino.</p>
+
+<h1>How to use OTOduino</h1>
+<p> When you plug an audio jack to iPhone, OTOduino connection icon (at the left lower of a screen) changes "Disconnected" to "Connected". 
+If it does not changes to "Connected", check the warning message shown the right side of the icon. 
+In the most cases, you should set the output volume at the maximum.</p>
+<p>You can monitor voltage of Arduino analog ports. You can toggle enable/disable state of the analog panels (placed at the left of the screen) by touching them. 
+To monitor digital ports, first touch a small icon of digital panels to change it to "in" icon. Then right button shows the current digital port value (high or low).
+To output signal from a digital port, touch a small icon and change it to "out" icon. Then you can toggle high/low status of the digital port by right button touch.</p>
+
+</body>
+</html>

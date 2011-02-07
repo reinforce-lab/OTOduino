@@ -1,0 +1,3 @@
+[submodule "OTO-plug"]
+	path = OTO-plug
+	url = git://github.com/reinforce-lab/OTO-plug.git
