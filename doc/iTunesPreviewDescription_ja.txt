@@ -1,0 +1,3 @@
+"OTOduino"は、グラフィカル表示をするアナログ信号のデータ通信ターミナルアプリです。フィジカルコンピューティングに使われるマイコンボードArduino(TM)とiPhoneをイヤホン端子で接続して、音声信号でArduinoのアナログ端子およびデジタル端子をiPhoneからモニターおよび制御ができます。
+
+このアプリ "OTOduino" (ソースコードのレポジトリ https://github.com/reinforce-lab/OTOduino) そしてOTOduinoが利用しているソフトウェアモデム "OTO-plug" (レポジトリ https://github.com/reinforce-lab/OTO-plug) は、いずれもThe MIT licenseでオープンソースプロジェクトとして公開されています。いずれのプロジェクトもREINFORCE Lab.が運営しています。

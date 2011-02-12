@@ -1,0 +1,4 @@
+"OTO" means "sound" in Japaniese. 
+"OTOduino" is a visualized sound modem terminal application for iPhone. You can monitor and control Arduino(TM)digial and analog ports status by connecting your Arduino to iPhone earphone jack.
+
+Both "OTOduino" (repository https://github.com/reinforce-lab/OTOduino) project and a software modem project "OTO-plug" (repository https://github.com/reinforce-lab/OTO-plug) which "OTOduino" uses are open-source projects released under MIT license.

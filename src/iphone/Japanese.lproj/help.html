@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<h1>"OTOduino"って何?</h1>
+<p>"OTOduino"はイヤホン端子に接続した<a href="http://www.arduino.cc/">Arduino(TM)</a>のIOポートをモニタ、制御できる、グラフィカルなモデム端末アプリです。
+とてもシンプルなインタフェース回路を使いイヤホン端子につなぐだけで、あなたのArduinoとiPhoneがつながります。
+<img src="../iphone_and_device.jpg"/>
+</p>
+
+<p>この"OTOduino"アプリ (ソースコード レポジトリ <a href="https://github.com/reinforce-lab/OTOduino">https://github.com/reinforce-lab/OTOduino</a>) project 
+と、このアプリが使用している "OTO-plug" (レポジトリ <a href="https://github.com/reinforce-lab/OTO-plug">https://github.com/reinforce-lab/OTO-plug</a>) 
+プロジェクトは、いずれもThe MIT licenseで公開されているオープンソースプロジェクトです。
+この2つのプロジェクトはフリーランスiPhoneアプリ開発者、上原 昭宏 (屋号 REINFORCE Lab. <a href="http://www.reinforce-lab.com/">http://www.reinforce-lab.com/</a>)が運営しています。
+</p>
+
+<h1>Arduino インタフェース回路とスケッチ</h1>
+OTOduinoを手元のArduinoで使うには、インタフェース回路の作製とスケッチの書き込みが必要です。
+<h2>インタフェース回路</h2>
+<p>3月までにインタフェース回路のキットを販売する予定ですが、とてもシンプルな回路なので自分で作ることもできます。回路図は以下のものです：
+<img src="../otoduino_schematic.tiff"/>
+<br/>
+回路図のコンデンサC1およびC2には、どんな種類のものでも使えますが、積層セラミックコンデンサが安価で入手性がよいです。値は0.1uF以上のものを使ってください(値が0.1uF以上ならば、例えば1uFでも動作します)。
+イヤホンジャックの音声出力端子は、必ず左チャネルをArduinoに接続してください。アプリ OTOduino はデータ送信に左チャネルのみを使い、右チャネルは無音にします。
+</p>
+<h2>スケッチのアップロード</h2>
+<p>スケッチの書き込みには、まずライブラリの追加が必要です。Arduinoのライブラリフォルダに"SoftwareModem"というディレクトリ(Macならば ~/Document/Arduino/libraries/ に)
+を作成します。次に、SoftwareModem.cppとSoftwareModem.h ファイルをレポジトリ <a href="https://github.com/reinforce-lab/OTOduino/tree/master/OTO-plug/src/arduino/libraries/SoftwareModem/">https://github.com/reinforce-lab/OTOduino/tree/master/OTO-plug/src/arduino/libraries/SoftwareModem/</a>
+からダウンロードします。
+</p>
+<p>次にスケッチをダウンロードして書き込みます。"OTOduinoSImpleClient" というフォルダを作り、ファイル OTOduinoSimpleClient.pde と OTOduinoTypes.h をレポジトリ
+<a href="https://github.com/reinforce-lab/OTOduino/tree/master/src/arduino/OTOduinoSimpleClient">https://github.com/reinforce-lab/OTOduino/tree/master/src/arduino/OTOduinoSimpleClient</a>
+からダウンロードします。このOTOduinoSimpleClientスケッチをArduino IDEで開き、Verify/uploadして書き込みます。</p>
+
+<h1>OTOduinoの使い方</h1>
+<p> iPhoneのイヤホン端子にジャックを挿入すると、アプリOTOduinoの画面左下にある接続状況アイコンが白色から赤色に変化して接続したことを知らせます。
+もしもアイコンが接続状態に変化しなければ、アイコンの右横に表示されているメッセージを確認して下さい。
+接続ができないほとんどの原因は、ヘッドホンの出力音量を最大値にしていないことです。</p>
+<p>OTOduinoを使うと、Arduinoのアナログ端子の電圧をモニターできます。
+画面左に並んでいるアナログパネルをタッチすることで、電圧モニターを有効/無効にできます。
+Arduinoのデジタル端子をモニターするには、画面左にならぶデジタル端子それぞれの操作ボタンのうち、真ん中にある"IN"/"OUT"ボタンをタッチして”IN"にします。
+この状態で、デジタル端子のHIGH/LOW値が最も右にあるボタンに表示されます。
+Arduinoのデジタル端子から信号を出力するには、先程のアイコンをタッチして”OUT"にします。右のボタンをタッチすることで、出力値をHIGH/LOWに切り替えられます。
+</p>
+
+</body>
+</html>

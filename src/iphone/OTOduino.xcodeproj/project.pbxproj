@@ -131,6 +131,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* OTOduino-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OTOduino-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		DD0236B812E171BD00867C5D /* hiz_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hiz_icon.png; path = Images/hiz_icon.png; sourceTree = "<group>"; };
+		DD3D854113065EC500E55CBA /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Japanese; path = Japanese.lproj/help.html; sourceTree = "<group>"; };
 		DD51412912C03B830068BD59 /* ColorBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorBarView.h; sourceTree = "<group>"; };
 		DD51412A12C03B830068BD59 /* ColorBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorBarView.m; sourceTree = "<group>"; };
 		DD51412F12C086EA0068BD59 /* VoltageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoltageView.h; sourceTree = "<group>"; };
@@ -647,6 +648,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DDDCD4F112FEB7D600A47D09 /* English */,
+				DD3D854113065EC500E55CBA /* Japanese */,
 			);
 			name = help.html;
 			sourceTree = "<group>";

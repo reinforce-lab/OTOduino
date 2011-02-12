@@ -6,9 +6,9 @@
 <body>
 
 <h1>What is "OTOduino"?</h1>
-<p>"OTO" means "sound" in Japaniese. 
+<p>"OTO" means "sound" in Japanese. 
 "OTOduino" is a visualized sound modem terminal application for iPhone.
-You can monitor and control <a href="http://www.arduino.cc/">Arduino(TM)</a> digial and analog ports status by connecting your Arduino to iPhone earphone jack as following:
+You can monitor and control <a href="http://www.arduino.cc/">Arduino(TM)</a> digital and analog ports status by connecting your Arduino to iPhone earphone jack as following:
 <img src="../iphone_and_device.jpg"/>
 </p>
 
@@ -29,7 +29,7 @@ Its circuit diagram is as following:
 <img src="../otoduino_schematic.tiff"/>
 <br/>
 Any kind of capacitores can be used for C1 and C2.
-Earphone jack left channel must be connected to the Arduino.OTOduino app only uses headset left channels to transmit data to Arduino. Right channnel is mute.
+Earphone jack left channel must be connected to the Arduino.OTOduino app only uses headset left channels to transmit data to Arduino. Right channel is mute.
 </p>
 <h2>How to upload a sketch</h2>
 <p>First SoftwareModem library should be added to your local disk. Make a "SoftwareModem" directory in your Arduino libraries directory (~/Document/Arduino/libraries/ on Mac OS),
@@ -37,7 +37,7 @@ and then download source codes SoftwareModem.cpp and SoftwareModem.h from the re
 </p>
 <p>Second download a sketch and upload it. Make a "OTOduinoSImpleClient" directory and download source codes OTOduinoSimpleClient.pde and OTOduinoTypes.h from the repository
 <a href="https://github.com/reinforce-lab/OTOduino/tree/master/src/arduino/OTOduinoSimpleClient">https://github.com/reinforce-lab/OTOduino/tree/master/src/arduino/OTOduinoSimpleClient</a>.
-Now you can open the OTOduinoSimpleClient sketch and veriry/upload it to your Arduino.</p>
+Now you can open the OTOduinoSimpleClient sketch and verify/upload it to your Arduino.</p>
 
 <h1>How to use OTOduino</h1>
 <p> When you plug an audio jack to iPhone, OTOduino connection icon (at the left lower of a screen) changes "Disconnected" to "Connected". 
@@ -45,7 +45,5 @@ If it does not changes to "Connected", check the warning message shown the right
 In the most cases, you should set the output volume at the maximum.</p>
 <p>You can monitor voltage of Arduino analog ports. You can toggle enable/disable state of the analog panels (placed at the left of the screen) by touching them. 
 To monitor digital ports, first touch a small icon of digital panels to change it to "in" icon. Then right button shows the current digital port value (high or low).
-To output signal from a digital port, touch a small icon and change it to "out" icon. Then you can toggle high/low status of the digital port by right button touch.</p>
-
-</body>
+To output signal from a digital port, touch a small icon and change it to "out" icon. Then you can toggle high/low status of the digital port by right button touch.</p></body>
 </html>
