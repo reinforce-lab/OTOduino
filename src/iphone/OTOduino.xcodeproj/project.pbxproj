@@ -66,7 +66,6 @@
 		DD863B8312FFA7AD00ACB127 /* iphone_and_device.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD863B8212FFA7AD00ACB127 /* iphone_and_device.jpg */; };
 		DD863B8512FFA7BB00ACB127 /* otoduino_schematic.tiff in Resources */ = {isa = PBXBuildFile; fileRef = DD863B8412FFA7BB00ACB127 /* otoduino_schematic.tiff */; };
 		DDA4261412FAECCA005C4EAA /* bar07.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA4261312FAECCA005C4EAA /* bar07.png */; };
-		DDC2900912DE988200BD4BD6 /* libSoftwareModem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC28FFE12DE982800BD4BD6 /* libSoftwareModem.a */; };
 		DDCE625012F579CF00633AA7 /* AnalogPinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCE624F12F579CF00633AA7 /* AnalogPinModel.m */; };
 		DDCE625312F57AA200633AA7 /* DigitalPinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCE625212F57AA200633AA7 /* DigitalPinModel.m */; };
 		DDDCD49012FE8DF600A47D09 /* bar00@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD47B12FE8DF600A47D09 /* bar00@2x.png */; };
@@ -94,30 +93,6 @@
 		DDDCD4B512FEB47100A47D09 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD4B312FEB47100A47D09 /* icon@2x.png */; };
 		DDDCD4F412FEB7EC00A47D09 /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = DDDCD4F312FEB7EC00A47D09 /* help.html */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		DDC28FFD12DE982800BD4BD6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DDC28FF412DE982800BD4BD6 /* SoftwareModem.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = SoftwareModem;
-		};
-		DDC28FFF12DE982800BD4BD6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DDC28FF412DE982800BD4BD6 /* SoftwareModem.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DD1CF8D912B5BB8200E784AE;
-			remoteInfo = TestCases;
-		};
-		DDC2900A12DE989500BD4BD6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DDC28FF412DE982800BD4BD6 /* SoftwareModem.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = SoftwareModem;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -198,8 +173,8 @@
 		DD51447412C5C9080068BD59 /* OTOduinoHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTOduinoHost.m; sourceTree = "<group>"; };
 		DD863B8212FFA7AD00ACB127 /* iphone_and_device.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone_and_device.jpg; sourceTree = "<group>"; };
 		DD863B8412FFA7BB00ACB127 /* otoduino_schematic.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = otoduino_schematic.tiff; sourceTree = "<group>"; };
+		DD96078813A64DF70077CE7D /* SoftwareModem.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SoftwareModem.xcodeproj; path = "../../OTO-plug/src/obj-c/SoftwareModem.xcodeproj"; sourceTree = "<group>"; };
 		DDA4261312FAECCA005C4EAA /* bar07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar07.png; path = Images/bar07.png; sourceTree = "<group>"; };
-		DDC28FF412DE982800BD4BD6 /* SoftwareModem.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SoftwareModem.xcodeproj; path = "../../OTO-plug/src/obj-c/SoftwareModem.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		DDC2900112DE986900BD4BD6 /* AudioPHY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioPHY.h; path = "../../OTO-plug/src/obj-c/AudioPHY.h"; sourceTree = SOURCE_ROOT; };
 		DDC2900212DE986900BD4BD6 /* FSKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSKConstants.h; path = "../../OTO-plug/src/obj-c/FSKConstants.h"; sourceTree = SOURCE_ROOT; };
 		DDC2900412DE986900BD4BD6 /* SWMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWMConstants.h; path = "../../OTO-plug/src/obj-c/SWMConstants.h"; sourceTree = SOURCE_ROOT; };
@@ -242,7 +217,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDC2900912DE988200BD4BD6 /* libSoftwareModem.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -278,7 +252,7 @@
 		29B97314FDCFA39411CA2CEA /* OTOduino */ = {
 			isa = PBXGroup;
 			children = (
-				DDC28FF412DE982800BD4BD6 /* SoftwareModem.xcodeproj */,
+				DD96078813A64DF70077CE7D /* SoftwareModem.xcodeproj */,
 				DD51422C12C1C2780068BD59 /* SoftwareModem */,
 				DD5142FA12C2D5570068BD59 /* OTOduinoHost */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -455,12 +429,8 @@
 			name = OTOduinoHost;
 			sourceTree = "<group>";
 		};
-		DDC28FF512DE982800BD4BD6 /* Products */ = {
+		DD96078913A64DF70077CE7D /* Products */ = {
 			isa = PBXGroup;
-			children = (
-				DDC28FFE12DE982800BD4BD6 /* libSoftwareModem.a */,
-				DDC2900012DE982800BD4BD6 /* TestCases.app */,
-			);
 			name = Products;
 			sourceTree = "<group>";
 		};
@@ -478,7 +448,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				DDC2900B12DE989500BD4BD6 /* PBXTargetDependency */,
 			);
 			name = OTOduino;
 			productName = OTOduino;
@@ -507,8 +476,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = DDC28FF512DE982800BD4BD6 /* Products */;
-					ProjectRef = DDC28FF412DE982800BD4BD6 /* SoftwareModem.xcodeproj */;
+					ProductGroup = DD96078913A64DF70077CE7D /* Products */;
+					ProjectRef = DD96078813A64DF70077CE7D /* SoftwareModem.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -517,23 +486,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		DDC28FFE12DE982800BD4BD6 /* libSoftwareModem.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSoftwareModem.a;
-			remoteRef = DDC28FFD12DE982800BD4BD6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DDC2900012DE982800BD4BD6 /* TestCases.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = TestCases.app;
-			remoteRef = DDC28FFF12DE982800BD4BD6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
@@ -635,14 +587,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		DDC2900B12DE989500BD4BD6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SoftwareModem;
-			targetProxy = DDC2900A12DE989500BD4BD6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		DDDCD4F312FEB7EC00A47D09 /* help.html */ = {
 			isa = PBXVariantGroup;
@@ -693,8 +637,8 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
-				ONLY_ACTIVE_ARCH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
@@ -709,6 +653,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
@@ -724,6 +669,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

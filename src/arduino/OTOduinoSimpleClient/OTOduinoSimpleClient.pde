@@ -7,8 +7,15 @@
  *
  */
 
-#include <SoftwareModem.h>
+#include <OTOplug1200.h>
 #include "OTOduinoTypes.h"
+
+// ****
+// Definitions
+// ****
+#define SERIAL_DEBUG 0
+#if SERIAL_DEBUG
+#endif
 
 // ****
 // Variables
@@ -25,9 +32,6 @@ uint16_t digitalPortValue;
 bool shouldReportAnalogValue;
 uint8_t reportingAnalogPin;
 bool shouldSendInitializedMessage;
-// ****
-// Definitions
-// ****
 
 // ****
 // methods
@@ -36,8 +40,10 @@ bool shouldSendInitializedMessage;
 // packet receiver method
 void packetReceivedCallback(const uint8_t *buf, uint8_t length)
 {
- // packetDump(rcvBuf, length); // DEBUG
-  
+#if SERIAL_DEBUG
+ packetDump(rcvBuf, length);
+#endif
+
   if(length == 0 || rcvLength != 0) return;
   // copy buffer
   for(int i=0; i < length; i++) {
@@ -45,7 +51,9 @@ void packetReceivedCallback(const uint8_t *buf, uint8_t length)
   }
   rcvLength = length;
 }
+
 // packet dump 
+#if SERIAL_DEBUG
 void packetDump(const uint8_t *buf, uint8_t length)
 {  
   Serial.print("Packet(len:");
@@ -58,12 +66,12 @@ void packetDump(const uint8_t *buf, uint8_t length)
   }
   Serial.println("");
 }
+#endif
+
 // read a packet and do somethins
 void processPacket()
 {
   if(rcvLength == 0) return;
-
-//packetDump(rcvBuf, rcvLength); // DEBUG
 
   switch(rcvBuf[0] )  {
    case digitalIOMessage:
@@ -84,12 +92,9 @@ void processPacket()
     pk_requestDigitalPinMode();
     break;
   case clientInitConfirmedMessage:
-  //Serial.println("received initialization confirmed message.");
     shouldSendInitializedMessage = false;
     break;
-  default: 
-//    packetDump(rcvBuf, rcvLength);
-Serial.println("^- unknown packet");
+  default: break;
   }
   rcvLength = 0;
 }
@@ -109,12 +114,12 @@ void pk_digitalIOMessage()
 }
 void pk_setAnalogPinEnabled()
 {
-  /*
-   Serial.print("pk_setAnalogPinEnabled() pinnum:");
+#if SERIAL_DEBUG
+  Serial.print("pk_setAnalogPinEnabled() pinnum:");
   Serial.print((int)rcvBuf[1]);
   Serial.print(", enabled:");
   Serial.println((int)rcvBuf[2]);
-  */
+#endif
   // <setAnalogPiEnabled, pin#, disable/enable(0/1)>  
   uint8_t pinnum = rcvBuf[1];
   bool enabled   = (rcvBuf[2] != 0);
@@ -124,10 +129,11 @@ void pk_setAnalogPinEnabled()
 }
 void pk_requestAnalogPinEnabled()
 {
-/*  
+#if SERIAL_DEBUG
   Serial.print("pk_requestAnalogPinEnabled() pinum:");
   Serial.println((int)rcvBuf[1], DEC);
-*/  
+#endif
+
   // <requestAnalogPinEnabled, pin#>
   uint8_t pinnum = rcvBuf[1];
   if(pinnum >= NumOfAnalogPins) return;
@@ -136,35 +142,40 @@ void pk_requestAnalogPinEnabled()
   sendBuf[0] = analogPinEnabledMessage;
   sendBuf[1] = pinnum;
   sendBuf[2] = analogPinEnabled[pinnum];
-  SoftwareModem.write(sendBuf, 3);
+  OTOplug1200.write(sendBuf, 3);
 }
 void pk_setDigitalPinMode()
 {
-  /*
+#if SERIAL_DEBUG
   Serial.print("pk_setDigitalPinMode() pinum:");
   Serial.print((int)rcvBuf[1], DEC);
   Serial.print(",");
   Serial.println((int)rcvBuf[2], HEX); 
-  */
+#endif
+
   //<setDigitalPinMode, pin#, pinmode>
   uint8_t pinnum = rcvBuf[1];
-  if(pinnum > 1 && pinnum < NumOfDigitalPins) {
-    digitalPinModes[pinnum] = (OTOduinoPinModeType) rcvBuf[2];
+  if(pinnum > 1 && pinnum < NumOfDigitalPins && pinnum != MODEM_DOUT_PIN) {
+    OTOduinoPinModeType pinModeType = (OTOduinoPinModeType)rcvBuf[2];
+    digitalPinModes[pinnum] = pinModeType;
+    boolean isOutput = (pinModeType == Output);
+    pinMode(pinnum, isOutput);
   } 
 }
 void pk_requestDigitalPinMode()
 { 
-  /*
+#if SERIAL_DEBUG
   Serial.print("pk_requestDigitalPinEnabled() pinum:");
   Serial.println((int)rcvBuf[1], DEC);
-  */
+#endif
+
   //<requestDigitalPinMode, pin#>
   uint8_t pinnum = rcvBuf[1];
   //<digitalPinModeMessage, pin#, pinmode>
   sendBuf[0] = digitalPinModeMessage;
   sendBuf[1] = pinnum;
   sendBuf[2] = digitalPinModes[pinnum];
-  SoftwareModem.write(sendBuf, 3);
+  OTOplug1200.write(sendBuf, 3);
 }
 void sendDigitalPortMessage(uint16_t value)
 {
@@ -173,7 +184,7 @@ void sendDigitalPortMessage(uint16_t value)
   sendBuf[1] = 0;
   sendBuf[2] = 0x0ff & value;
   sendBuf[3] = (value >> 8);
-  SoftwareModem.write(sendBuf, 4);
+  OTOplug1200.write(sendBuf, 4);
 }
 void sendAnalogIOMessage(uint8_t pinnum, uint16_t value)
 {
@@ -182,46 +193,48 @@ void sendAnalogIOMessage(uint8_t pinnum, uint16_t value)
   sendBuf[1] = pinnum;
   sendBuf[2] = value;
   sendBuf[3] = value >> 8; 
-  SoftwareModem.write(sendBuf, 4);  
+  OTOplug1200.write(sendBuf, 4);  
 }
 
 void setup()
 {
+#if SERIAL_DEBUG
   Serial.begin(115200);
-  Serial.println("start");
-  SoftwareModem.begin();
-  SoftwareModem.attach(packetReceivedCallback);
-
+#endif
+  for(int i = 2; i < NumOfDigitalPins; i++) {
+   digitalPinModes[i] = Input;
+   pinMode(i, INPUT);
+   digitalRead(i);
+  }
+  
   reportingAnalogPin = 1;
   shouldSendInitializedMessage = true;
   
-  for(int i = 0; i < NumOfDigitalPins; i++) {
-   digitalPinModes[i] = Input;
-   digitalRead(i);
-  }
+  OTOplug1200.begin();
+  OTOplug1200.attach(packetReceivedCallback);
 }
 void loop()
 { 
   // receive packet and reply to it
-  if(!SoftwareModem.writeAvailable()) return;  
+  if(!OTOplug1200.writeAvailable()) return;  
   processPacket();
   
-  if(!SoftwareModem.writeAvailable()) return;
+  if(!OTOplug1200.writeAvailable()) return;
   if(shouldSendInitializedMessage) {
   //  Serial.println("sending initialized message.");
     sendBuf[0] = clientInitMessage;
-    SoftwareModem.write(sendBuf, 1);  
+    OTOplug1200.write(sendBuf, 1);  
   }
  
   // report digital/analog port value only when modem buffer is available.
-  if(!SoftwareModem.writeAvailable()) return;
+  if(!OTOplug1200.writeAvailable()) return;
   if(shouldReportAnalogValue) {
     // read analog port
     if(analogPinEnabled[reportingAnalogPin]) {
-      SoftwareModem.startADConversion(reportingAnalogPin);
+      OTOplug1200.startADConversion(reportingAnalogPin);
       uint8_t pinnum;
       uint16_t value;
-      if( SoftwareModem.readAnalogPin(&pinnum, &value)) {
+      if( OTOplug1200.readAnalogPin(&pinnum, &value)) {
        sendAnalogIOMessage(pinnum, value);
        reportingAnalogPin++;
       }
