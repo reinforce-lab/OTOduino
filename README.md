@@ -1,5 +1,5 @@
 OTOduino is a visualized sound modem iPhone application for Arduino(TM). With this application, Arduino IO ports can be controlled by iPhone via ear phone.
-This source codes are releaesed under The MIT license.
+This source codes are released under The MIT license.
 
 Making an original iPhone external device was difficult because standard SDK does not provide a framework to access an iPhone dock connector. This application that sends and receives modulated audible signal to communicate with Arduino via ear phone is a good example to start your original iPhone device and its application developments.
 
